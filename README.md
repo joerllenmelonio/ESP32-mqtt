@@ -1,7 +1,7 @@
 # TRABALHO DE SISTEMAS EMBARCADOS 
 
 
-Componentes: Joerllen Melonio, José Nathan Araujo, Vinicius Anderson, Thiago Raposo, Lucas Santos.
+Componentes: Joerllen Melonio, José Nathan Araujo, Vinicius Anderson, Thiago Raposo, Ulisses Nathan, Lucas Santos.
 
 
 Esse projeto faz parte da disciplina de Sistemas Embarcados do curso de engenharia da Computação da UEMA.
