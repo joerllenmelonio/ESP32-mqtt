@@ -1,6 +1,6 @@
 #include <string.h>
 #include "wifi_control.h"
-#include "../mqtt_control/mqtt_control.h"
+#include "../mqtt_control/include/mqtt_control.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
