@@ -25,7 +25,7 @@ uint32_t MQTT_CONNECTED = 0;
 
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
 {
-    ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+    ESP_LOGD(TAG, "Evento despachado da base do loop de eventos=%s, ID do evento=%d", base, event_id);
     esp_mqtt_event_handle_t event = event_data;
     esp_mqtt_client_handle_t client = event->client;
     int msg_id;
@@ -95,7 +95,7 @@ void Publisher_Task(void *pvParameters)
         char message[40];
         sprintf(message, "O botao foi pressionado %d vez(es)", counter);
 
-        esp_mqtt_client_publish(client, "engcomp/button/0202", message, 0, 0, 0);
+        esp_mqtt_client_publish(client, "engcomp/button/0303", message, 0, 0, 0);
         vTaskDelay(5000 / portTICK_PERIOD_MS);
     }
     vTaskDelay( 10 / portTICK_PERIOD_MS );

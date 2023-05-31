@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "switch_control.h"
-#include "../../definition.h"
+#include "../definition.h"
 
 info_count_t info_count_click;
 info_led_t status_led;
 
-#define SWITCH 4
-#define LED 2
+#define SWITCH 4  //botão
+#define LED 2  //led do esp32
 
 void gpio_switch(int button){
     gpio_reset_pin(button);
@@ -37,9 +37,9 @@ void vTaskSwitch(void *pvParameters)
 
             if(stts_led==1){
 
-                printf("O led esta ligado.\n");
+                printf("Led ligado.\n");
             }else{
-                printf("O led esta desligado.\n");
+                printf("Led desligado.\n");
             }
 
             info_count_click.clicks = count;

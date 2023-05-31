@@ -6,7 +6,9 @@
     "definition.h": "c",
     "stdint.h": "c",
     "nvs_flash.h": "c",
-    "freertos.h": "c"
+    "freertos.h": "c",
+    "mqtt_control.h": "c",
+    "gpio.h": "c"
   },
   "idf.adapterTargetName": "esp32",
   "idf.openOcdConfigs": [

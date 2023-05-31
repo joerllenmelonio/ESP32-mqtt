@@ -1,0 +1,13 @@
+{
+	"folders": [],
+	"settings": {
+		"files.associations": {
+			"definition.h": "c",
+			"stdint.h": "c",
+			"nvs_flash.h": "c",
+			"freertos.h": "c",
+			"mqtt_control.h": "c",
+			"esp_wifi.h": "c"
+		}
+	}
+}

@@ -13,9 +13,9 @@
 #include "driver/gpio.h"
 
 extern QueueHandle_t xQueueSwitch;
-
 extern QueueHandle_t xQueueCount;
 
+//definição de structs
 typedef struct{
     int led;
     bool status;
