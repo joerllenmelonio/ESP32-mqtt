@@ -46,7 +46,7 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
 
     case SYSTEM_EVENT_STA_DISCONNECTED:
       xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
-      printf("Disconectado de %s!\n",WIFI_SSID);
+      printf("Desconectado de %s!\n",WIFI_SSID);
       esp_wifi_connect();
       break;
 

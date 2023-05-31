@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "switch_control.h"
-#include "../definition.h"
+#include "../../definition.h"
 
 info_count_t info_count_click;
 info_led_t status_led;
