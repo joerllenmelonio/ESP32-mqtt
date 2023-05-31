@@ -1,9 +1,9 @@
 #include <string.h>
 #include "../definition.h"
-#include "../components/blink_control/blink_control.h"
-#include "../components/mqtt_control/mqtt_control.h"
-#include "../components/switch_control/switch_control.h"
-#include "../components/wifi_control/wifi_control.h"
+#include "../components/blink_control/include/blink_control.h"
+#include "../components/mqtt_control/include/mqtt_control.h"
+#include "../components/switch_control/include/switch_control.h"
+#include "../components/wifi_control/include/wifi_control.h"
 #include "esp_netif.h"
 #include "nvs_flash.h"
 
