@@ -15,7 +15,7 @@
 #define WIFI_SSID "insert wifi ssid"
 #define WIFI_PASS "insert wifi password"
 
-static const char *TAG = "MQTT_BUTTON02";
+static const char *TAG = "MQTT_BUTTON03";
 
 static EventGroupHandle_t wifi_event_group;
 const int CONNECTED_BIT = BIT0;
