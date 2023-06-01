@@ -6,17 +6,17 @@ Componentes: Joerllen Melonio, José Nathan Araujo, Vinicius Anderson, Thiago Ra
 
 Esse projeto faz parte da disciplina de Sistemas Embarcados do curso de engenharia da Computação da UEMA.
 
-## Objetivo do Projeto:
+## Objetivo do Projeto
 O projeto tem como objetivo coloca o aluno em contato com as seguintes conhecimentos.
 
-*Utilização de Sistema Operacional em tempo Real;
-*Utilização de Tarefas, Filas e outras API do FreeRTOS;
-*Utilização do Protocolo MQTT;
-*Utilização do Metodos de Economia de Energia em Sistemas Embarcados;
+* Utilização de Sistema Operacional em tempo Real;
+* Utilização de Tarefas, Filas e outras API do FreeRTOS;
+* Utilização do Protocolo MQTT;
+* Utilização do Metodos de Economia de Energia em Sistemas Embarcados;
 
  ## Desafio do Projeto
 
- 1. Na tarefa switch_control, monitorar o estado de uma tecla e enviar o estado da tecla para a tarefa blink e counter utilizando a API de Queues;
+ 1. Na tarefa switch_control, monitorar o estado de uma tecla (push button e enviar o estado da tecla para a tarefa blink e counter utilizando a API de Queues;
 
  2. Na tarefa led_control, ligar um led indicativo toda vez que switch se manter presionado;
   
@@ -24,11 +24,18 @@ O projeto tem como objetivo coloca o aluno em contato com as seguintes conhecime
 
  4. Na tarefa mqtt_control, enviar a contagem para o servidor em nuvem de acordo com um intervalo de tempo.
 
-## Materiais utilizados
+## Materiais Utilizados
 
 * Microcontrolador ESP-32 
-* Led 
-* Switch
+* Led (ESP32)
+* Push Button
 * Resistores
 * Jumpers de Conexão
 * Protoboard
+
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+  <img alt="conexão entre esp32 e push button." src="protoboard.jpeg"/>
+</picture> 
+
