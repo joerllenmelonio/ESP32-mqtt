@@ -1,11 +1,15 @@
 #include <string.h>
+#include <stdio.h>
+#include "esp_wifi.h"
+#include "esp_log.h"
+#include "nvs_flash.h"
+#include "esp_netif.h"
 #include "../definition.h"
 #include "../components/blink_control/include/blink_control.h"
 #include "../components/mqtt_control/include/mqtt_control.h"
 #include "../components/switch_control/include/switch_control.h"
 #include "../components/wifi_control/include/wifi_control.h"
-#include "esp_netif.h"
-#include "nvs_flash.h"
+#include "../components/ulp_code/include/ulp_code.h"
 
 QueueHandle_t xQueueSwitch;
 QueueHandle_t xQueueCount;

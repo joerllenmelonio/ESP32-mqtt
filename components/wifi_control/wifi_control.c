@@ -12,8 +12,8 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-#define WIFI_SSID "insert wifi ssid"
-#define WIFI_PASS "insert wifi password"
+#define WIFI_SSID "Aff"
+#define WIFI_PASS "pinkpines"
 
 static const char *TAG = "MQTT_BUTTON03";
 

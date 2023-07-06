@@ -34,7 +34,3 @@ O projeto tem como objetivo coloca o aluno em contato com as seguintes conhecime
 * Protoboard
 
 
-<picture>
-  <img alt="conexão entre esp32 e push button." src="protoboard.jpeg"/>
-</picture> 
-

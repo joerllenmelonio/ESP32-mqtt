@@ -13,9 +13,11 @@
 #include "lwip/sockets.h"
 #include "lwip/dns.h"
 #include "lwip/netdb.h"
-
 #include "esp_log.h"
 #include "mqtt_client.h"
+
+#include "../switch_control/include/switch_control.h"
+#include "../ulp_code/include/ulp_code.h"
 
 info_count_t info_count_click;
 
@@ -37,6 +39,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         
         msg_id = esp_mqtt_client_subscribe(client,"engcomp/button/0303", 0);
         ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
+        xTaskCreatePinnedToCore( vTaskControlUlp, "TaskControlUlp", configMINIMAL_STACK_SIZE + 2048, NULL, 1, NULL, CORE_1 );
 
         break;
     case MQTT_EVENT_DISCONNECTED:
@@ -72,7 +75,7 @@ void mqtt_app_start(void)
 {
     ESP_LOGI(TAG, "STARTING MQTT");
     esp_mqtt_client_config_t mqttConfig = {
-        .uri = "INSERT MQTT_IP",
+        .uri = "INSERT MQTT_IP", // mqtt://IP
         .username = "INSERT MQTT_USERNAME",
         .password = "INSERT MQTT_PASSWORD",
         .client_id = "INSERT MQTT_ID"
